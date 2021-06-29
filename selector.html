@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	.a{
+
+	border: 2px solid;
+	width: 350px;
+	height: 200px;
+	background: red;
+
+}
+.b{
+
+	border: 2px solid;
+	width: 350px;
+	height: 200px;
+	background: cyan;
+
+}
+.c{
+
+	border: 2px solid;
+	width: 350px;
+	height: 200px;
+	background: blue;
+
+}
+.d{
+
+	border: 2px solid;
+	
+	height: 200px;
+	
+
+}
+</style>
+</head>
+<body>
+	<h1>Selectors</h1>
+
+<div class="a" id="box">
+	<h2>Hello Gwalior</h2>
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in</p>
+</div>
+
+<div class="b" id="box1">
+	<h2>Hello Gwalior</h2>
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in</p>
+</div>
+
+<div class="b" id="box2">
+	<h2>Hello Gwalior</h2>
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in</p>
+</div>
+
+<div class="d" id="box3">
+	<h2>Hello Gwalior</h2>
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in</p>
+	</div>
+
+	<ul id="list">
+		<li>Home
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</li>
+		<li>About</li>
+		<li>Menu</li>
+		<li>Contact</li>
+		<li>Features</li>
+		<li>Content</li>
+		<li>Sign</li>
+	</ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+	$(document).ready(function(){
+		// alert("vaishali");
+		var a=$('#box').html();
+		var b=$('#box1').html();
+		var c=$('#box1').html();
+		console.log(a);
+		console.log(b);
+		console.log(c);
+
+		// set
+		// $('*').css("background","grey");
+		$('#box3 , .a , .b , .c').css("background","red","border");
+		$('h1').css("background","green");
+		$('p').css("color","brown");
+		// $('#list').css("color","blue");
+		// $('#list li').css("border","2px solid blue");
+		// $('li:first').css("border","2px solid blue");
+		// $('li:last').css("border","2px solid green");
+		// $('li:first-child').css("border","2px solid orange"); eq-equation
+		// $('ul li:eq(2)').css("border","2px solid black");
+		// $('ul li:gt(2)').css("border","2px solid black"); //gt-greater than
+		// $('ul li:lt(6)').css("border","2px solid black");  //lower than
+		// $('li:even').css("border","2px solid black");
+		$('li:odd').css("border","2px solid red");
+
+	});
+</script>
+
+</body>
+</html>
